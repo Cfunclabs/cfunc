@@ -40,7 +40,7 @@ params:
     profileMode:
         # Disable to populate home page with 'mainSections' content
         enabled: true
-        title: Cfunc
+        title: Cfunc Labs
         description: |
 
           We create computer systems that demonstrate human-like adaptive intelligence.
