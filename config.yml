@@ -1,0 +1,93 @@
+baseURL: https://cfunc.ai/ # must be https so sitemap URLs are https (affects Google indexing)
+title: cfunc.ai
+paginate: 5
+theme: hugo-dracula-charlolamode
+
+
+
+menu:
+    main:
+        - name: Contact
+          url: /contact/
+          weight: 30
+        # Blog tab temporarily hidden (also disabled in content/blog/_index.md). Re-enable both to bring it back.
+        # - name: Blog
+        #   url: /blog/
+        #   weight: 20
+
+     # - name: Categories
+        #   url: /categories/
+        #   weight: 10
+        # - name: new Tab
+        #   url: /newtab/
+        #   weight: defines order of tabs
+   
+
+
+params:
+    author: Author's Name
+
+
+    defaultTheme: dark
+    ShowShareButtons: true
+    ShowReadingTime: true
+    displayFullLangName: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    ShowToc: true
+    hideFooter: true   # hides the footer copyright line; set to false to bring it back
+
+    profileMode:
+        # Disable to populate home page with 'mainSections' content
+        enabled: true
+        title: Cfunc
+        description: |
+
+          We create computer systems that demonstrate human-like adaptive intelligence.
+        
+        imageUrl: "/images/Flaticon_Dracula_597560.svg.png"
+        imageTitle: The Count
+        imageWidth: 250
+        imageHeight: 250
+        buttons:
+            - name: Official Dracula Theme
+              url: https://draculatheme.com/
+    mainSections:
+      - blog
+
+    socialIcons:
+        # Temporarily removed — uncomment to re-enable
+        # - name: mastodon
+        #   url: "https://mastodon.social/@Randoneering@fosstodon.org"
+        # - name: github
+        #   url: "https://github.com/randoneering"
+        # - name: linkedin
+        #   url: "https://www.linkedin.com/in/justin-frye-b4b14763/"
+
+      # add more social icons. find more in svg.html file
+      # - name: youtube
+      #   url: yoururl
+      # - name: twitter
+      #   url: yoururl
+      # - name: facebook
+      #   url: yoururl
+
+
+    # change favicon in images folder (icon for web tab)
+    assets:
+          favicon: "/images/favicon.ico"
+          favicon16x16: "/images/favicon-16x16.png"
+          favicon32x32: "/images/favicon-32x32.png"
+          apple_touch_icon: "/images/apple-touch-icon.png"
+          safari_pinned_tab: "/images/apple-touch-icon.png"
+
+
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+enableEmoji: true
+pygmentsUseClasses: true
+
+minify:
+    disableXML: true
+
